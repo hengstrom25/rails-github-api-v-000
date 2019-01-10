@@ -4,7 +4,7 @@
   
   <p>Displaying repositories for <% @user["login"] %></p>
     <% if @repos %>
-      
+    <% end %>  
 
   <%= form_tag("/repositories/create", method: "post") do %>
     <%= label_tag(:name, "Create a New Repo:") %>

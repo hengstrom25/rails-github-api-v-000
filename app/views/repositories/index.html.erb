@@ -3,6 +3,8 @@
   <!-- List repositories and display username here! -->
   
   <p>Displaying repositories for <% @user["login"] %></p>
+    <% if @repos %>
+      
 
   <%= form_tag("/repositories/create", method: "post") do %>
     <%= label_tag(:name, "Create a New Repo:") %>

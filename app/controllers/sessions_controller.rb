@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
         'client_id': ENV['GITHUB_CLIENT_ID'],
         'client_secret': ENV['GITHUB_CLIENT_SECRET'],
         'code': params[:code]
+      }
     req.headers['Accept'] = 'application/json'
     end
     

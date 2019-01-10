@@ -4,6 +4,9 @@
   
   <p>Displaying repositories for <% @user["login"] %></p>
     <% if @repos %>
+    <ul>
+      
+    </ul>
     <% end %>  
 
   <%= form_tag("/repositories/create", method: "post") do %>

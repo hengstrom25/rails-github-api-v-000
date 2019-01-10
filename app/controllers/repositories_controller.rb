@@ -6,7 +6,7 @@ class RepositoriesController < ApplicationController
         req.headers['Accept'] = 'application/json'
     end
     
-    @user = JSON.parse(resp.body)
+    @user = JSON.parse(user.body)
     
     
   

@@ -8,7 +8,7 @@ class RepositoriesController < ApplicationController
     
     @user = JSON.parse(user.body)
     
-    
+    repos = Faraday.get("")
   
     @repos = JSON.parse(resp.body)
   
